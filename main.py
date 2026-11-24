@@ -14,7 +14,8 @@ LINE = (
     "if my job notices I'm gone. Early results are encouraging."
 )
 
-OUTPUT_PATH = os.environ.get("ENTRY_OUTPUT", "/output/entry.txt")
+OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+OUTPUT_PATH = os.path.join(OUTPUT_DIR, "entry.txt")
 
 
 def main() -> int:
